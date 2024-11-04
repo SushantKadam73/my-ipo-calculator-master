@@ -1,4 +1,17 @@
 export const lastUpdated = "2024-01-08 10:00 AM IST";
+export interface IPOData {
+  name: string;
+  price: string;
+  gmp?: number;
+  subscriptionRate?: number;
+  issueSize: string;
+  openDate?: string;
+  closeDate?: string;
+  boaDate?: string;
+  listingDate: string;
+  status?: 'active' | 'closed';
+}
+
 
 export interface Category {
   category: string;
@@ -17,6 +30,53 @@ export interface Company {
   name: string;
   categories: Category[];
 }
+
+export interface IPODashboardData {
+  name: string;
+  symbol?: string;
+  price: string;
+  priceRange?: string;
+  gmp?: number;
+  subscriptionRate?: number;
+  issueSize: string;
+  openDate?: string;
+  closeDate?: string;
+  boaDate?: string;
+  listingDate: string;
+  listingPrice?: string;
+  currentPrice?: string;
+  status?: 'active' | 'closed';
+}
+
+export const dashboardData = {
+  ongoingIPOs: [
+    {
+      name: "Western Carriers (India)",
+      price: "167-172",
+      gmp: 16,
+      subscriptionRate: 26.92,
+      issueSize: "₹154.2 Cr",
+      openDate: "2024-01-01",
+      closeDate: "2024-01-12",
+      boaDate: "2024-01-15",
+      listingDate: "2024-01-20",
+      status: "active"
+    }
+  ],
+  upcomingIPOs: [
+    {
+      name: "Northern Arc Capital",
+      price: "255-263",
+      gmp: 25,
+      issueSize: "₹1,800 Cr",
+      openDate: "2024-01-15",
+      closeDate: "2024-01-17",
+      boaDate: "2024-01-20",
+      listingDate: "2024-01-25"
+    }
+  ],
+  pastIPOs: [] // You can add past IPOs here when they complete listing
+};
 
 export const companies: Company[] = [
   {

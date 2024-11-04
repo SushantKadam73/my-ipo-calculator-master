@@ -54,7 +54,7 @@ interface Results {
 }
 
 const IPOAllocationCalculator = () => {
-  const [userInput, setUserInput] = useState<UserInput>({
+  const initialUserInput: UserInput = {
     totalCapital: '',
     numAccounts: '',
     selectedCompanies: Object.fromEntries(companies.map(c => [c.name, true])),
@@ -64,10 +64,20 @@ const IPOAllocationCalculator = () => {
         numEmployeeAccounts: ''
       }])
     )
-  });
+  };
 
+  const [userInput, setUserInput] = useState<UserInput>(initialUserInput);
   const [results, setResults] = useState<Results | null>(null);
   const [isClient, setIsClient] = useState(false);
+  const [selectedCategories, setSelectedCategories] = useState({
+    retail: true,
+    shni: true,
+    bhni: true,
+    shareholder: true,
+    employee: true
+  });
+  const [preference, setPreference] = useState('gmp'); // 'gmp', 'subscription', 'capital'
+  const [reuseCapital, setReuseCapital] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -218,14 +228,18 @@ const IPOAllocationCalculator = () => {
     });
   };
 
+  const handleRefresh = () => {
+    setUserInput(initialUserInput);
+    setResults(null);
+  };
+
   return (
     <Card className="w-full">
       <CardHeader>
         <div className="flex justify-between items-center">
           <CardTitle>IPO Capital Allocation Calculator</CardTitle>
           <div className="text-sm text-gray-500">
-            Last Updated: {lastUpdated}
-            <Button variant="outline" size="sm" className="ml-2" onClick={() => window.location.reload()}>
+            <Button variant="outline" size="sm" onClick={handleRefresh}>
               Refresh
             </Button>
           </div>
@@ -253,6 +267,78 @@ const IPOAllocationCalculator = () => {
                   <label htmlFor={`company-${company.name}`}>{company.name}</label>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* More Customization Section - Moved here */}
+          <div className="space-y-4 border p-4 rounded-lg">
+            <h3 className="text-lg font-medium">More Customization</h3>
+            
+            <div>
+              <label className="block text-sm font-medium mb-2">Calculation Preference</label>
+              <select 
+                className="w-full border rounded p-2"
+                value={preference}
+                onChange={(e) => setPreference(e.target.value)}
+              >
+                <option value="gmp">GMP Based</option>
+                <option value="subscription">Subscription Based</option>
+                <option value="capital">Capital Based</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-2">Categories to Apply</label>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex items-center gap-2">
+                  <Checkbox 
+                    checked={selectedCategories.retail}
+                    onCheckedChange={(checked) => 
+                      setSelectedCategories(prev => ({...prev, retail: !!checked}))}
+                  />
+                  <label>Retail</label>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Checkbox 
+                    checked={selectedCategories.shni}
+                    onCheckedChange={(checked) => 
+                      setSelectedCategories(prev => ({...prev, shni: !!checked}))}
+                  />
+                  <label>S-HNI</label>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Checkbox 
+                    checked={selectedCategories.bhni}
+                    onCheckedChange={(checked) => 
+                      setSelectedCategories(prev => ({...prev, bhni: !!checked}))}
+                  />
+                  <label>B-HNI</label>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Checkbox 
+                    checked={selectedCategories.shareholder}
+                    onCheckedChange={(checked) => 
+                      setSelectedCategories(prev => ({...prev, shareholder: !!checked}))}
+                  />
+                  <label>Shareholder</label>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Checkbox 
+                    checked={selectedCategories.employee}
+                    onCheckedChange={(checked) => 
+                      setSelectedCategories(prev => ({...prev, employee: !!checked}))}
+                  />
+                  <label>Employee</label>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Checkbox 
+                checked={reuseCapital}
+                onCheckedChange={(checked) => setReuseCapital(!!checked)}
+              />
+              <label>Enable Capital Reuse for Upcoming IPOs</label>
             </div>
           </div>
 
@@ -327,9 +413,23 @@ const IPOAllocationCalculator = () => {
             )
           ))}
 
-          <Button onClick={calculateAllocation} className="w-full">
-            Calculate Optimal Allocation
-          </Button>
+          {/* Calculation Options */}
+          <div className="grid grid-cols-2 gap-4">
+            <select 
+              className="w-full border rounded p-2"
+              value={preference}
+              onChange={(e) => setPreference(e.target.value)}
+            >
+              <option value="gmp">Calculate by GMP</option>
+              <option value="subscription">Calculate by Subscription</option>
+              <option value="capital">Calculate by Capital</option>
+              <option value="roi">Calculate by ROI</option>
+              <option value="expectedGain">Calculate by Expected Gain</option>
+            </select>
+            <Button onClick={calculateAllocation} className="w-full">
+              Calculate Allocation
+            </Button>
+          </div>
 
           {results && (
             <div className="space-y-4 mt-4">
