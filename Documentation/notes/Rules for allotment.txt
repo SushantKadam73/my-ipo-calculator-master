@@ -1,0 +1,107 @@
+1. Shares are allotted based on the concept of lot size.
+2. A person can apply in only one category from retail, shni and bhni. 
+if a company has shareholder of employee category allocation then the user can choose to apply to these category in addition to the one category (from retail, shni and bhni). A person can choose to apply 0 lots in retail, shni and bhni and may apply in sh(shareholder) or employee category.  
+3. Retail investors are those who bid for less than Rs 2 lakhs in an IPO.
+4. NIIs are investors who make an IPO bid of more than Rs 2 lakhs.
+5. NIIs are divided into two categories:
+   a. Small NIIs: Bid amount between Rs 2 lakhs to Rs 10 lakhs
+   b. Big NIIs: Bid amount not less than Rs 10 lakhs
+6. 15% of total shares are reserved for the NII category:
+   a. One-third (5%) for small NIIs (shni)
+   b. Two-thirds (10%) for big NIIs (bhni)
+7. No. of lots that can be applies using employee and sh categories follows the same rules as the retail category.
+
+
+Allotment Basis
+
+Retail Category
+If the IPO in the RII category is not oversubscribed, a full allocation will be made to all applicants.
+If the IPO in this category is oversubscribed, the allocation will be made by lottery and applicants will receive at least one lot regardless of how many lots they have applied for.
+
+
+NII Subcategory
+NII or HNI category has two subcategories:
+
+Small NII (bids below Rs 10L)
+NII investors who place bids for shares worth Rs 2 to 10 lakhs are called Small NII (sHNI or sNII). One-third of the shares in the NII category are reserved for sNII.
+
+Large NII (bids above Rs 10L)
+NII investors who bid for shares worth more than Rs 10 lakhs are referred to as Big NII (bNII or bHNI). 2/3rd of the shares in the NII category are reserved for bNII.
+
+
+IPO NII Allotment Process
+sNII or sHNI Allotment Process
+sNII IPO not fully subscribed: If the IPO in subcategory sNII is not fully subscribed (<1x), a full allocation will be made to all applicants.
+sNII IPO oversubscribed: If the IPO is oversubscribed in the sNII sub-category (>1x), the allotment to each investor shall not be less than the minimum application size (~Rs 2 lakhs), subject to availability of equity shares in the sNII portion. In this case, a lottery will be conducted.
+This is similar to the allocation in the RII category. Instead of one lot, the sNII investor will receive shares worth the NII minimum application size. The NII minimum application size is just above Rs 2 lakhs.
+
+Example: If the IPO in the sNII sub-category is subscribed twice (in terms of applications), one out of two applicants will receive the sHNI minimum application. This is worth approximately Rs 2 lakhs, irrespective of how many shares they have applied for. Applicants will be selected through a lottery process.
+
+bNII or bHNI Allotment Process
+bNII IPO not fully subscribed: If the IPO in bNII sub-category is not fully subscribed, a full allocation will be made to all applicants.
+bNII IPO oversubscribed: If the IPO in bNII sub-category is oversubscribed, the allotment to each investor shall not be less than the minimum NII application amount. This amount is worth approximately Rs 2 lakhs. It is subject to availability of equity shares in the bNII portion.
+
+This is similar to the allotment in the RII category. Instead of a lot, the bNII investor will receive shares worth the minimum application amount. The minimum application amount is approximately Rs 2 lakhs.
+The investment amount limit for Big HNI is at least Rs 10 lakhs. But, in this case, the investors will receive shares worth Rs 2 lakhs on a lottery basis (same as small HNI).
+
+
+Employees
+The issuing company may reserve a portion of the public offering exclusively for its eligible employees. The eligibility criteria are explained in the prospectus document.
+
+IPO Employee Quota
+The IPO prospectus document details the employee reservation quota and the discount (if any) offered to employees.
+
+Under the regulations, the employee reservation quota for an IPO offering may not exceed 5% of the company's post-issue paid-up capital.
+
+There is no specific investment limit for employees. However, to avail the employee discount (if any), the investment amount should not exceed Rs 2 lakhs.
+
+Employees are given the opportunity to buy the stock at a discounted price. This can help them earn higher profits. Note: The discounted price should not exceed 10% of the price offered to other categories of investors.
+
+The IPO employee discount is a discount on the share price offered to eligible employees of the issuing company. To qualify for this discount, the employee must apply for the IPO under the employee reservation quota. The definition of eligible employees, the amount of the discount, and the rules vary by IPO and are explained in the RHP document.
+
+
+shareholders
+Some IPOs have a special reservation quota for eligible shareholders of the parent company. The IPO Prospectus Document contains detailed information on eligibility, bid limits, allocation criteria and other shareholder reservation rules.
+
+Shareholder Quota Limits
+A shareholder can invest up to the total shares offered in the shareholder reserved category. Some companies provide a discount on share prices for IPO applications up to Rs 2 lakh.
+
+It increases the chance of allocation.
+Companies can provide an additional discount in this category.
+
+
+Certainly. I'll list down the rules of allotment for retail investors and non-institutional investors (NIIs) based on the information provided in the document.
+
+Rules for Retail Investors:
+
+1. Retail investors are those who bid for less than Rs 2 lakhs in an IPO.
+2. Shares are allotted based on the concept of lot size.
+3. The maximum number of retail investors who can receive allotment is calculated by dividing the number of shares offered to retail investors by the number of shares in a lot.
+4. In case of under-subscription, all bidders receive full allotment.
+5. In case of over-subscription:
+   a. If retail applications are higher than the maximum number of allottees, allotment is done through a computerized lottery system.
+   b. If the number of applications is less than the maximum allottees, every bidder gets 1 lot and the remaining shares are allotted on a pro-rata basis.
+
+Rules for Non-Institutional Investors (NIIs):
+
+1. NIIs are investors who make an IPO bid of more than Rs 2 lakhs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+2. NIIs are divided into two categories:
+   a. Small NIIs: Bid amount between Rs 2 lakhs to Rs 10 lakhs
+   b. Large NIIs: Bid amount not less than Rs 10 lakhs
+3. 15% of total shares are reserved for the NII category:
+   a. One-third (5%) for small NIIs
+   b. Two-thirds (10%) for large NIIs
+4. Allotment is done through a lottery-based system as of September 22, 2022.
+5. Those selected through lottery get allotment for the minimum amount:
+   a. Rs 2 lakh for small NIIs
+   b. Rs 10 lakh for large NIIs
+6. After minimum allotment, remaining shares are allotted on a pro-rata basis.
+7. Bids cannot be submitted at the cut-off price; only bids above cut-off price are considered.
+8. Bids below the cut-off price are rejected.
+9. NIIs cannot withdraw or cancel their bids.
+10. There is no lock-in period for NII investors in an IPO.
+
+These rules outline the allotment process for retail and non-institutional investors in an IPO, 
+
+
+

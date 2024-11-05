@@ -1,0 +1,447 @@
+## **IPO Allotment Rules**
+
+- The IPO allotment is made by the Registrar in consultation with the designated stock exchange.
+- The IPO allotment depends on the number of shares offered and the bids received from investor in the particular investor category (i.e. Retail, NII, QIB).
+- The rules for IPO allotment vary by [investor category](https://www.chittorgarh.com/book-chapter/ipo-investors/7/) (i.e. Retail, NII, QIB).
+- Only valid applications are considered for allocation. Invalid applications (i.e. application with wrong Demat account number, multiple applications with same PAN, etc) are rejected.
+- Only the applications received at or above the cut-off price are considered for allocation.
+- An under-subscription in one category (other than the QIB category) may be offset with oversubscription from another category in consultation with the Lead Manager, the Registrar, the Exchange and the issuer.
+- Unsubscribed shares in the QIB category are not available for subscription in other categories.
+- The registrar prepares and publish the [Basis of Allotment](https://www.chittorgarh.com/report/ipo_basis_of_allotment_list/7/mainline/) document that provides detail about the allotment.
+
+## **IPO Allotment Method**
+
+The IPO allotment mechanism depends on the [investor category](https://www.chittorgarh.com/book-chapter/ipo-investors/7/) and the IPO subscription levels.
+
+Note:
+
+- If an IPO is Undersubscribed across each investor category, all investors with valid applications will receive a full allotment. The IPO must receive a minimum total subscription of 90% to succeed.
+- If the IPO is over-subscribed for one category and under-subscribed for another, the oversubscription may be adjusted with the under-subscribed portion of the other category, except for QIB.
+- In case of oversubscription, the issuer will allocate shares based on a lottery system or proportionately based on the investor category. Let us take a look at the IPO allocation criteria for each investor category.
+
+## **IPO Allotment by Investor Category**
+
+### **1. IPO Allotment to Retail Investors (RII)**
+
+Each retail individual investor (RII) gets allocated at least one lot; provided there are those many shares reserved for RII in the IPO and the number of RII applicants. IPO shares are allocated in a bunch known as lot. A lot includes x number of shares worth around Rs 15,000 in Mainboard IPO and Rs 1,00,000 in SME IPO. The number of shares in lot (lot size) is declared by the issuer company along with the issue price.
+
+The number of maximum retail investors who could get allotment in an IPO is derived by dividing the total number of shares offered in RII reserved category by the lot size.
+
+*Maximum RII Allotees = (Total shares offered to RII) / (IPO lot size)*
+
+For example; In [ideaForge Technology IPO](https://www.chittorgarh.com/ipo/ideaforge-technology-ipo/1442/), 842,865 shares were reserved for retail. The lot size of the IPO was 22 shares. Maximum Retail Allotees = 8,42,865 / 22 = 38,312 investors.
+
+IPO Retail Category Basis of Allotment
+
+|  | Scenario | Allotment Process |
+| --- | --- | --- |
+| 1 | RII category under-subscribed. | Full allotment to all applicants. |
+| 2 | Total RII applications are greater than maximum retail investors who could get allotment. | Computerized lottery where the winners get maximum 1 lot of shares. |
+| 3 | Total RII applications are less than maximum retail investors who could get allotment. | Each retail investor will be allotted at least one lot. The remaining shares will be allocated on a pro-rata basis. |
+
+For example, if a company offers 5 lakhs shares to RII in an IPO with a minimum lot size of 250 shares. In this case, the maximum RII investors to whom the allotment can be made is (500,000/250) 2,000 investors.
+
+Scenario 1: If 1,950 investors apply for 495,000 shares, all investors receive the full allotment because the RII category is not fully subscribed.
+
+Scenario 2: If 2,500 investors apply for 650,000 shares, it is not possible to allocate at least one lot to each investor because there are only 500,000 shares for RII. In this case, the allocation is made by a computerized lottery system.
+
+Scenario 3: If 1,975 investors apply for 525,000 shares, each investor will initially be allocated at least one lot, i.e. 250 shares. Of the remaining [500,000-(1,975*250)] 6,250 shares, the allotment is then made on a proportionate basis.
+
+### **2. IPO allotment in NII category**
+
+**NII Sub Category**
+
+NII IPO investor category is divided in 2 parts:
+
+| Sub Category | Investment Limits | Reservation |
+| --- | --- | --- |
+| Small NII (sNII) | Rs 2 lakhs to Rs 10 lakhs | 1/3 of total NII reserved portion |
+| Big NII (bNII) | More than Rs 10 lakhs | 2/3 of total NII reserved portion |
+
+Each NII investor will be allotted a minimum bid lot as applicable to that category, subject to availability of shares. The minimum bid lot will be equal to the minimum application size for more than Rs 2 lakhs. In case any shares are left after allotment of minimum bid lot, the same will be allotted on a pro-rata basis.
+
+In case of under subscription, all investors will receive the full allotment. The unsubscribed portion of the NII may be used to meet any excess demand from other categories.
+
+Note:
+
+- The allotment method for small and Big NII is the same.
+- Even though the Big NII category has a minimum subscription amount of Rs 10 lakhs, in case of oversubscription, shares worth Rs 2 lakhs will be allotted (the minimum NII bid amount). This is similar to the allocation for the Small NII sub-category.
+- There is no segregation of Big NII and Small NII in SME IPO.
+
+### **3. IPO allotment in QIB category**
+
+The allotment to [QIB investors](https://www.chittorgarh.com/book-chapter/ipo-investors/7/#qib) will be made on a **proportionate basis** in case of oversubscription. In case of an under-subscription, all QIB investors will receive the full allotment. However, the under-subscribed portion in the QIB category cannot be allotted to other investor categories.
+
+The mutual funds in the QIB category will be allotted up to 5% of the QIB category. If the demand for the mutual funds exceeds 5% of the QIB category, the allocation shall be made proportionally up to 5%. However, if mutual fund demand is less than 5% of the QIB category, all mutual funds will receive the full allotment. The remaining unsubscribed portion may be used to meet the demand of other QIB investors on a pro-rata basis for up to 95% of the QIB category.
+
+### **4. IPO Allotment to Anchor Investors**
+
+In mainboard bookbuilding IPOs, [anchor investors](https://www.chittorgarh.com/book-chapter/ipo-investors/7/#anchor) are offered shares up to 60% of the QIB category. Of the 60%, one-third of the anchor investors' share is reserved for domestic mutual funds.
+
+The issuer decides on the selection of the anchor investors and their allocation in consultation with the lead manager. The registrar maintains a physical book to record the applications received from Anchor Investors. If the offer price is higher than the Anchor Investor offer price, the anchor investors are sent revised confirmation of allocation note (CAN) for payment of differential amount.
+
+**Anchor Reservation Criteria**
+
+The issuer must observe the following guidelines when allocating shares to anchor investors.
+
+| Anchor Investor Reservation | Anchor Investor Limit |
+| --- | --- |
+| Up to Rs. 10 crores | Maximum 2 Anchor Investors. |
+| Rs. 10 crores - Rs. 250 crores | Minimum 2 and maximum 15 Anchor Investors subject to minimum allotment of Rs 5 crores per Anchor Investor. |
+| Rs 250 crores | Minimum 5 and maximum 15 anchor investors for allocation up to Rs 250 crores and additional 10 anchor investors for every additional Rs 250 crores subject to minimum allotment of Rs 5 crores per Anchor Investor. |
+
+### **5. IPO Allotment to Employees**
+
+The allocation to employees will be made on a pro rata basis in the event of oversubscription.
+
+The maximum value of allocation to eligible employees shall not exceed Rs 200,000 unless the Employee Reservation Portion is undersubscribed. If the employee quota is not fully subscribed, the unsubscribed portion gets allocated on a proportionate basis to Eligible Employees for value exceeding Rs. 200,000 up to Rs. 500,000.
+
+### **6. IPO Allotment to Shareholders**
+
+The allocation to shareholders will be made on proportionate basis in the event of oversubscription.
+
+If an investor has placed a bid in the shareholder category for an amount exceeding Rs 200,000 and also in any other category, then the bid will be considered as multiple bids and will get rejected.
+
+If an investor bids in the shareholder category up to an amount of Rs 200,000, he may also bid in the Employee category (if applicable) up to Rs 200,000 and any other category. Such bids will not be counted as multiple bids and will have a chance to get allotment in respective category as per the criteria explained above for each category.
+
+## **IPO Allotment Process**
+
+The [registrar of the IPO](https://www.chittorgarh.com/book-chapter/ipo-intermediaries/6/#registrar) is responsible for the allotment process. The basis for allotment is finalized by the registrar in consultation with the designated exchanges. The following are the general steps taken by the Registrar to complete the IPO allotment process.
+
+1. Receive IPO application data from the stock exchange as soon as the issue is completed.
+2. Validation of IPO applications that don't meet eligibility criteria.
+3. Validation of IPO application data with depositories and banks to identify 3 party IPO applications.
+    
+    rd
+    
+4. Rejection of invalid applications with technical errors.
+5. Valid applications at or above cut-off price are grouped at the lot size level to determine the total demand for shares in each category.
+6. Finalize the [basis of allotment (BOA)](https://www.chittorgarh.com/glossary/ipo-basis-of-allotment/74/) in consultation with designated exchanges.
+7. Sending the allotment advice via email/SMS to inform investors of the allotment status.
+8. Notifying banks and depositories and coordinating with them to ensure that the investor's bank account is debited on the scheduled allotment date and the shares are credited to the investor's demat account.
+
+## **IPO Allotment Date**
+
+IPO allotment date is the date on which the IPO allotment is announced by the Registrar to the issue. Investors can check the status of their IPO applications on IPO allotment date. The IPO allotment is a key event that investors follow in over-subscribed IPOs where the allotment is made by lottery.
+
+The registrar of the issue uploads the allotment results on its website, where investors can check the status of their allotment by entering the PAN number, IPO application number or demat account number.
+
+The IPO allotment should be completed within five business days of the closing of the offering.
+
+## **IPO Allotment Status Check**
+
+The IPO allotment status check is to determine whether the investor has received the shares or allotment in an IPO. An investor needs either a PAN number, an application number, or a demat account number to check the allotment status. The allotment status is made available online by the Registrar to the Issue on the date of the IPO allotment.
+
+**Steps to check IPO allotment status**
+
+1. Visit [IPO Allotment Status Page](https://www.chittorgarh.com/report/ipo-allotment-status-check-date-process/23/) at Chittorgarh.com.
+2. Select the desired IPO.
+3. Go to the Allotment tab and click on the IPO allotment status button.
+4. Users will be redirected to the Registrar's website.
+5. Select the IPO from the dropdown.
+6. Enter PAN number, application number or DP Client ID.
+7. Submit and check the allotment status.
+
+If investors have received the allotment, the allotment status page on the website will display the number of shares allotted, and if no allotment has been made, the page will be blank.
+
+## **IPO Allotment Chances**
+
+There is no fixed IPO allotment formula or IPO allotment chances calculator that can guarantee investors an allotment in an IPO. The allotment depends on the level of [subscription](https://www.chittorgarh.com/book-chapter/ipo-subscription/24/) in the IPO and the [category](https://www.chittorgarh.com/book-chapter/ipo-investors/7/) in which the investor has applied.
+
+In most IPOs, the allotment is made by lottery because they are oversubscribed. Your chances of receiving an allocation are the same as other applicants.
+
+Although there is no rule of thumb that can guarantee investors an allotment in an IPO, investors can always follow some good practices to increase their chances of allotment as mentioned below:
+
+- In the Retail category, apply for 1 lot of shares from multiple family accounts.
+- If you must choose between the Retail, sHNI, and bHNI categories, wait until the last day to see the response and find out where you have the best chance of allotment.
+- Do not apply at the last minute. Try to apply before 1 p.m. on the issue closing day.
+- Make sure you fill out all the information correctly.
+- Be sure to approve the UPI mandate by the deadline.
+- Check the [basis of allotment](https://www.chittorgarh.com/report/ipo_basis_of_allotment_list/7/mainline/) document to determine your eligibility for allotment. If you feel you should be allotted IPO shares but haven't received them, contact the Registrar for a response.
+- Study some old Basis of Allotment documents to understand how allotments are made.
+
+## **Basis of Allotment Explained**
+
+The basis of allotment is the process that decides the allocation of shares in an IPO to the investors who have applied for it. The basis of allotment is included in the offer documents and is finalized by the registrar, company and lead manager in consultation with the Designated exchanges.
+
+The allotment shall be made according to the pro-rata or lottery system based on the investor category and demand for the IPO.
+
+The [Basis of Allotment (BOA)](https://www.chittorgarh.com/report/ipo_basis_of_allotment_list/7/mainline/) is a document published by the registrar in the leading daily newspaper once the allotment is finalized in consultation with the Designated Exchange/s. The BOA document contains the below details:
+
+- Total Number of applications received per Investor Category.
+- Total number of shares applied per Investor Category.
+- Subscription Rate per Investor Category.
+- Categorization of RII and NII based on the number of shares applied for each category.
+- Details on the below for each of the above grouped category segregated based on the number of shares applied:
+    - Number of applications received.
+    - % of application received per group to total applications.
+    - Total number of shares applied.
+    - % of shares applied per group to total number of shares applied.
+    - of Shares allotted per bidder.
+    - Ratio of bidders allotted shares to total bidders in each group.
+    - Total no. of shares allotted per group.
+
+Let us take the example of [Sah Polymers Limited](https://www.chittorgarh.com/ipo/sah-polymers-ipo/1347/) IPO to understand the basis of allotment document better and understand how the allotment for RII and NII is done.
+
+IPO Details
+
+| IPO Price | Rs 65 |
+| --- | --- |
+| Face Value | Rs 10 |
+| IPO Size | Rs 66.30 Cr |
+| Lot Size | 230 |
+
+Shares Offered
+
+| Category | Shares Offered | Amount (Rs Cr) | Size (%) |
+| --- | --- | --- | --- |
+| Anchor Investor | 4,590,000 | 29.84 | 45.00% |
+| QIB | 3,060,000 | 19.89 | 30.00% |
+| NII | 1,530,000 | 9.95 | 15.00% |
+| bNII (bids above Rs 10L) | 1,020,000 | 6.63 | 10.00% |
+| sNII (bids below Rs 10L) | 510,000 | 3.32 | 5.00% |
+| Retail | 1,020,000 | 6.63 | 10.00% |
+| Total | 10,200,000 | 66.30 | 100% |
+
+### **1. RII Allotment Explanation**
+
+**Allotment Rule for Retail Category**
+
+- Each RII investor gets allotted atleast one lot subject to availability of shares and number of RII applicants.
+- If the number of RII applicants is less than the number of allottees, the allotment will be made on proportionate basis.
+- If the number of RII applicants is more than the number of allottees, the allotment will be made by drawing of lots in combination with pro rata basis.
+
+In above example:
+
+- Maximum number of RII allottees: 4434 (1,020,000/230)
+- Total number of applications received: 138,971
+- Allotment Mechanism: Pro rata + Lottery. (The pro-rata determines which bidder category receives an allocation and lottery determines the allottees to whom allotment will be made).
+- Calculation for Allotment of Shares:
+    - The 230 bidder category accounts for 91.54% of the total applications. Hence, calculate 91.54% of 4434 = 4058.88. In the below BOA we can see that 4060 applicants have been allocated 230 shares giving a total of 933,800 shares.
+    - The 460 bidder category accounts for 4.75% of total applications. Hence, calculate 4.75% of 4434 = 210.62. In the below BOA we can see that 211 applicants have been allocated 230 shares giving a total of 48,530 shares.
+    - The 690 bidder category accounts for 1.28% of total applications. Hence, calculate 1.28% of 4434 = 56.7552. In the below BOA we can see that 57 applicants have been allocated 230 shares giving a total of 13,110 shares.
+    - So and so forth, the calculations are done for each category to know the allotment of shares per category.
+    - After allocating the minimum number of shares to each RII per category, 180 shares remain to be allocated randomly to 374 applicants from bidders who applied for 460 shares (Sr. No. 2) to 2990 shares (Sr.13).
+
+**Sah Polymers Limited BOA Document Extract of RII**
+
+| Sr. No | Category | No. of Applications Received | % of Total | Total No. of Equity Shares Applied | % to Total | No. of Equity Shares Allotted per Bidder | Ratio | Total No. of Equity Shares Allotted | No. Of allottees per category |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 230 | 1,27,218 | 91.54 | 2,92,60,140 | 74.29 | 230 | 3:94 | 933800 | 4060 |
+| 2 | 460 | 6,600 | 4.75 | 30,36,000 | 7.71 | 230 | 3:94 | 48,530 | 211 |
+| 3 | 690 | 1,780 | 1.28 | 12,28,200 | 3.12 | 230 | 57:1780 | 13,110 | 57 |
+| 4 | 920 | 797 | 0.57 | 7,33,240 | 1.86 | 230 | 25:797 | 5,750 | 25 |
+| 5 | 1150 | 716 | 0.52 | 8,23,400 | 2.09 | 230 | 23:716 | 5,290 | 23 |
+| 6 | 1360 | 293 | 0.21 | 4,04,340 | 1.03 | 230 | 0.5784722 | 2,070 | 9 |
+| 7 | 1610 | 295 | 0.21 | 4,74,950 | 1.21 | 230 | 0.5798611 | 2,070 | 9 |
+| 8 | 1840 | 103 | 0.07 | 1,89,520 | 0.48 | 230 | 0.1965278 | 690 | 3 |
+| 9 | 2070 | 53 | 0.04 | 1,09,710 | 0.28 | 230 | 0.1201389 | 460 | 2 |
+| 10 | 2300 | 254 | 0.18 | 5,84,200 | 1.48 | 230 | 0.5097222 | 1,840 | 8 |
+| 11 | 2530 | 41 | 0.03 | 1,03,730 | 0.26 | 230 | 0.0701389 | 230 | 1 |
+| 12 | 2760 | 59 | 0.04 | 1,62,840 | 0.41 | 230 | 0.1243056 | 460 | 2 |
+| 13 | 2990 | 762 | 0.55 | 22,78,380 | 5.78 | 230 | 24:762 | 5,520 | 24 |
+|  |  | 374 Allottees from Serial no 2 to 13 Additional 1(one) share |  |  |  | 1 | 90:187 | 180 |  |
+|  | TOTAL | 1,38,971 | 100 | 3,93,88,650 | 100 |  |  | 1020000 |  |
+
+Points to Note:
+
+- The above is a generic logic used for allotment (applicable in case of oversubscription).
+- The calculations may sometimes differ based on the below
+    - Rounding applied.
+    - Allocation can be done in terms of % of shares applied.
+    - Final discretion of registrar and designated exchanges.
+
+The above quoted example is of a Mainboard IPO. **In an SME IPO, the basis of allotment for RII is much simpler and easier**. There is generally one category of shares in which RIIs apply due to the higher minimum lot size application.
+
+Let us take example of Crayons Advertising Limited SME IPO to understand this better.
+
+The minimum and maximum bid lot for RII is of 2000 shares. The issue price is Rs.62- Rs.65. The number of shares reserved for RIIs is 2,138,000. Thus, the number of maximum RIIs to whom the minimum bid lot will be allotted is derived by dividing 2138000 by 2000=1069
+
+In the below Crayons Advertising IPO RII BOA extract, we can see that of 178,602 applications received, 1069 bidders will be picked by draw of computerized lottery and allotted 2000 shares.
+
+**Crayons Advertising Limited SME IPO BOA Document Extract of RII**
+
+| No. of Shares Applied For (Category Wise) | No. of Applications Received | % of Total | Total No. of Shares Applied in Each Category | % of Total | No. of Equity Shares Allotted per Applicant | Ratio | Total No. of Shares Allotted |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2000 | 1,78,602 | 100 | 35,72,04,000 | 100 | 2000 | 1,069:1,78,602 | 21.38,000 |
+| Total | 1,768,602 | 100 | 35,72,04,000 | 100 |  |  | 21,38,000 |
+
+### **2. NII Allotment Explanation**
+
+The allotment calculation for the small and big NII categories is similar to that for the RII category.
+
+**NII Allotment Rule**:
+
+- Each NII IPO investor gets allocated at minimum bid lot offered in the NII category; provided there are those many shares reserved for NII in the IPO and the number of NII applicants.
+- The remaining available Equity Shares if any, shall be allotted on a proportionate basis.
+
+**Minimum allotment in NII (sNII & bNII) per bidder** = 3,220 shares (Rs 209,300)
+
+**Small NII Category Allotment**
+
+- Total applicants to whom minimum bid lot can be allotted (sNII) = 158 (510,000/3,220)
+- Total applications received in sNII = 4578
+- Allotment mechanism: Pro-rata + Lottery.
+- The 3220 bidder category account for 94.32% of total applications. Thus, calculate 94.32% of 158 = 149.0256. Accordingly we can see that 149 applicants are allotted 3220 shares giving a total of 479,780 shares.
+- Since 149 applicants are each allocated 3220 shares, only 9 applicants (158-149) remain to be allocated the remaining 30220 shares (510,000-479780).
+- To determine the number of shares allocated to each bidder per category, divide 30220 by 9 = 3357.77
+- 3357 is less than the second category of 3450 thus each remaining bidder will be allocated 3357 shares.
+- The category of 3450 bidders, accounts for 1.68% of the total applications. Thus calculate 1.68% of 158 = 2.6544, resulting in 3357 shares (refer above point) being allocated to 3 applicants, giving a total of 10,071 shares.
+- So and so forth the calculations are done for each category to know the allocation of shares per category.
+- If the percentage of applications received for a category is very low compared to the total percentage, no shares will be allocated to that category.
+- Example: The category of 3910 shares represents 0.09% of the total applications. Let us take 0.09% of 158 = 0.1422. Thus, no shares will be allocated to the bidders of this category
+- Post the allotment is done as per above, there are 7 shares left. (510,000 - 509993 - Sum of shares allotted from Sr. No. 1 to 36)
+- These 7 shares will be allocated to the 9 applicants from Sr. No. 2 to Sr. No. 36
+
+Sah Polymers BOA Extract of Small NII (Rs 2 Lakhs to Rs 10 lakhs)
+
+| Sr. No. | Category | No. of Applications Received | % of Total | Total No. of Equity Shares applied | % to Total | No. of Equity Shares Allotted per Bidder | Ratio | Total No. of Equity Shares allotted | Number of allottees per category |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 3,220 | 4318 | 94.32 | 1,39,03,960 | 89.84 | 3,220 | 149:4318 | 479780 | 149 |
+| 2 | 3,450 | 77 | 1.68 | 2,65,650 | 1.72 | 3,357 | 3:77 | 10,071 | 3 |
+| 3 | 3,680 | 35 | 0.76 | 1,28,800 | 0.83 | 3,357 | 1:35 | 3,357 | 1 |
+| 4 | 3,910 | 4 | 0.09 | 15,640 | 0.1 | 3,357 | 0:04 | 0 | - |
+| 5 | 4,140 | 3 | 0.07 | 12,420 | 0.08 | 3,357 | 0:03 | 0 | - |
+| 6 | 4,370 | 2 | 0.04 | 8,740 | 0.06 | 3,357 | 0:02 | 0 | - |
+| 7 | 4,600 | 26 | 0.57 | 1,19,600 | 0.77 | 3,357 | 1:26 | 3,357 | 1 |
+| 8 | 4,830 | 6 | 0.13 | 28,980 | 0.19 | 3,357 | 0:06 | 0 | - |
+| 9 | 5,060 | 2 | 0.04 | 10,120 | 0.07 | 3,357 | 0:02 | 0 | - |
+| 10 | 5,750 | 11 | 0.24 | 63,250 | 0.41 | 3,357 | 0:11 | 0 | - |
+| 11 | 5,980 | 1 | 0.02 | 5 980 | 0.04 | 3,357 | 0:01 | 0 | - |
+| 12 | 6,210 | 1 | 0.02 | 6,210 | 0.04 | 3,357 | 0:01 | 0 | - |
+| 13 | 6,440 | 13 | 0.28 | 83,720 | 0.54 | 3,357 | 1:13 | 3,357 | 1 |
+| 14 | 6,900 | 16 | 0.35 | 1,10,400 | 0.71 | 3,357 | 1:16 | 3,357 | 1 |
+| 15 | 7,130 | 2 | 0.04 | 14,260 | 0.09 | 3,357 | 0:02 | 0 | - |
+| 16 | 7,360 | 1 | 0.02 | 7,360 | 0.05 | 3,357 | 0:01 | 0 | - |
+| 17 | 7,590 | 12 | 0.26 | 91,080 | 0.59 | 3,357 | 1:12 | 3,357 | 1 |
+| 18 | 7,820 | 2 | 0.04 | 15,640 | 10 | 3,357 | 0:02 | 0 | - |
+| 19 | 8,050 | 2 | 0.04 | 16,100 | 0.1 | 3,357 | 0:02 | 0 | - |
+| 20 | 8,970 | 1 | 0.02 | 8,970 | 0.06 | 3,357 | 0:01 | 0 | - |
+| 21 | 9,200 | 6 | 0.13 | 55,200 | 0.36 | 3,357 | 0:06 | 0 | - |
+| 22 | 9,660 | 1 | 0.02 | 9,660 | 0.06 | 3,357 | 0:01 | 0 | - |
+| 23 | 10,120 | 1 | 0.02 | 10,120 | 0.07 | 3,357 | 0:01 | 0 | - |
+| 24 | 10,350 | 1 | 0 02 | 10,350 | 0.07 | 3,357 | 0:01 | 0 | - |
+| 25 | 10,810 | 1 | 0.02 | 10,810 | 0.07 | 3,357 | 0:01 | 0 | - |
+| 26 | 11,040 | 1 | 0.02 | 11,040 | 0.07 | 3,357 | 0:01 | 0 | - |
+| 27 | 11,500 | 3 | 0.07 | 34,500 | 0.22 | 3,357 | 0:03 | 0 | - |
+| 28 | 11,960 | 1 | 0.02 | 11,960 | 0.08 | 3,357 | 0:01 | 0 | - |
+| 29 | 12,420 | 1 | 0.02 | 12,420 | 0.08 | 3,357 | 0:01 | 0 | - |
+| 30 | 12,650 | 1 | 0.02 | 12,650 | 0.08 | 3,357 | 0:01 | 0 | - |
+| 31 | 12,880 | 2 | 0.04 | 25,760 | 0.17 | 3,357 | 0:02 | 0 | - |
+| 32 | 13,800 | 2 | 0.04 | 27,600 | 0.18 | 3,357 | 0:02 | 0 | - |
+| 33 | 14,030 | 2 | 0.04 | 28,060 | 18 | 3,357 | 0:02 | 0 | - |
+| 34 | 14,490 | 5 | 0.11 | 72,450 | 0.47 | 3,357 | 0:05 | 0 | - |
+| 35 | 14,950 | 3 | 0.07 | 44,850 | 0.29 | 3,357 | 0:03 | 0 | - |
+| 36 | 15,180 | 12 | 0.26 | 1,82,160 | 1.18 | 3,357 | 1:12 | 3,357 | 1 |
+|  | All allottees from Serial no 2 to 36 for 1 (one) additional share |  |  |  | 1 | 7:09 | 7 |  |  |
+| TOTAL | 4578 | 100 | 1,54,76,470 | 100 |  |  | 5,10,000 |  |  |
+
+Points to Note:
+
+- The above is the generic logic used for allotment (applicable in case of oversubscription)
+- The calculations may sometimes differ based on the below
+    - Rounding applied.
+    - Allocation can be done in terms of % of shares applied.
+- Final discretion of registrar and designated exchanges.
+
+The above is an example of Mainboard NII BOA. In SME IPO, the allotment to NII is done on proportionate basis such that each allotted NII receives minimum bid lot. There is no classification of Small NII and Big NII in SMEs.
+
+Let us continue with the example of Crayons Advertising IPO, to understand SME IPO BOA for NIIs.
+
+The number of shares reserved for NIIs is 918,000. If we see the below extract:
+
+| No. of Shares Applied for (Category wise) | Number of Applications Received | % of Total | Total No. of Shares Applied in Each Category | % of Total | No. of Equity Shares Alloted per Apllicant | Ration of allottees to applicants |  | Total No. of Shares Allotted |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4000 | 3412 | 53.01 | 13648000 | 6.43 | 2000 | 15 | 1706 | 60000 |
+| 6000 | 511 | 7.93 | 3066000 | 1.45 | 2000 | 1 | 73 | 14000 |
+| 8000 | 243 | 3.77 | 1944000 | 0.92 | 2000 | 4 | 243 | 8000 |
+| 10000 | 199 | 3.09 | 1990000 | 0.94 | 2000 | 4 | 199 | 8000 |
+| 12000 | 164 | 2.54 | 1968000 | 0.93 | 2000 | 1 | 41 | 8000 |
+| 14000 | 146 | 2.26 | 2044000 | 0.96 | 2000 | 2 | 73 | 8000 |
+| 16000 | 503 | 7.81 | 8048000 | 3.8 | 2000 | 17 | 503 | 34000 |
+| 18000 | 108 | 1.67 | 1944000 | 0.92 | 2000 | 1 | 27 | 8000 |
+| 20000 | 156 | 2.42 | 3120000 | 1.47 | 2000 | 7 | 156 | 14000 |
+- The first category of 4,000 shares accounts for 6.43% of total number of shares applied.
+- Of 918,000 shares reserved for NII, 6.43% comes to 59,027.40.
+- As the allotment can be done in multiples of 2,000 (lot size), the derived figure is rounded to nearest multiple of 2,000 which comes to 60,000.
+- Considering each NII should get minimum bid lot of 2,000; the above derived 60,000 is allotted to 30 applicants (60000/2000) from 3412 application. Hence the ratio of 15:1706.
+- Likewise, calculation is done for each category of shares. Refer below sample calculations.
+
+| No. of shares reserved for NII | No. of shares applied for | % of total shares applied | No. of shares to be alloted | No. of shares to be allotted after rounding to nearest multiple 2000 | Minimum number of shares allotted to each applicant | Number of applicants to receive allotment |
+| --- | --- | --- | --- | --- | --- | --- |
+| 918,000 | 6,000 | 1.45 | 13,311.00 | 14,000 | 2,000 | 7 |
+| 918,000 | 8,000 | 0.92 | 8445.60 | 8,000 | 2,000 | 4 |
+| 918,000 | 10,000 | 0.94 | 8,629.20 | 8,000 | 2,000 | 4 |
+| 918,000 | 12,000 | 0.93 | 8,537.40 | 8,000 | 2,000 | 4 |
+| 918,000 | 14,000 | 0.96 | 8812.80 | 8,000 | 2,000 | 4 |
+| 918,000 | 16,000 | 3.80 | 34,884.00 | 34,000 | 2,000 | 17 |
+| 918,000 | 18,000 | 0.92 | 8,445.60 | 8,000 | 2,000 | 4 |
+| 918,000 | 20,000 | 1.47 | 13,494.60 | 14,000 | 2,000 | 7 |
+- If the % of shares applied for a particular category of shares is very low compared to total number of shares applied, that category will not receive any allotment. Refer below extract.
+
+| No. of Shares Applied for (Category wise) | Number of Applications Received | % of Total | Total No. of Shares Applied in Each Category | % of Total | No. of Equity Shares Alloted per Apllicant | Ration of allottees to applicants |  | Total No. of Shares Allotted |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 54000 | 1 | 0.01 | 54000 | 0.03 | 0 | 0 | 1 | 0 |
+| 56000 | 8 | 0.12 | 448000 | 0.21 | 2000 | 1 | 8 | 2000 |
+| 58000 | 1 | 0.01 | 58000 | 0.03 | 0 | 0 | 1 | 0 |
+- 54,000 shares category accounts for 0.03% of total shares applied. 0.03% of 918,000 comes to 275.4 and its nearest rounding to 2000 comes to zero. Thus, no shares are allotted to this category.
+- Another thing to look at is the number of applicants for a particular category. If it is not possible to allot shares in multiples of minimum bid lot, the shares get allotted based on draw of lots. Refer below extract
+
+| No. of Shares Applied for (Category wise) | Number of Applications Received | % of Total | Total No. of Shares Applied in Each Category | % of Total | No. of Equity Shares Alloted per Apllicant | Ration of allottees to applicants |  | Total No. of Shares Allotted |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 3054000 | 2 | 0.03 | 6108000 | 2.87 | 12000 | 1 | 1 | 24000 |
+| 3054000 | 0 | 0 | 0 | 0 | 2000 | 1 | 2 | 2000 |
+| 3054000 | 4 | 0.06 | 12224000 | 5.76 | 12000 | 1 | 1 | 48000 |
+| 3054000 | 0 | 0 | 0 | 0 | 2000 | 2 | 4 | 4000 |
+| **Total** | **6436** | **100** | **212102000** | **100** |  |  |  | **918000** |
+- The category of 3,054,000 accounts for 2.87% of total shares applied. 2.87% of 918,000 comes to 26,346.6. The nearest multiple of 2000 for 26,346.6 is 26,000.
+- There are 2 applicants in this category.
+- If 26,000 is divided equally amongst these 2 applicants, it comes to 13000 per applicant.
+- 13,000 is not a multiple of 2,000.
+- Thus, each applicant is allotted 12,000 shares (total 24,000) and remaining 2,000 shares are allotted to any one of them based on draw of lots.
+
+Thus, to conclude if we observe the BOA for Mainboard IPOs and SME IPOs we see below key difference:
+
+In Mainboard IPOs, the allotment to NIIs is done based on the maximum bNII and sNII allottees to whom the minimum NII lot can be allotted and in case of SME, there is no derivation of maximum NII allottees, the allotment is done in proportion of shares reserved for the NIIs and thereafter the minimum bid lot is allotted.
+
+---
+
+Another point to note is the difference in the number of shares reserved for RII and Other category in SME IPO in the offer documents versus the number of shares allotted to respective category in the Basis of Allotment (BOA). It is generally seen that the number of shares reserved for each investor category in the offer document matches the number of shares reserved or available for allotment as per BOA. However in case of SME Fixed price issues the reservation proportion gets adjusted proportionately as per the number of shares applied by each category provided the subscription by retail category is greater than the others category.
+
+Let us take the example of [On Door Concepts](https://www.chittorgarh.com/ipo/on-door-concepts-ipo/1546/) SME Fixed Price Issue to understand it better.
+
+On Door Concepts IPO Basis of Allotment
+
+| Investor Category | Shares reserved as per RHP | No. of shares applied as per BOA |
+| --- | --- | --- |
+| Issue Size | 1,498,800 |  |
+| Market Maker | 86,400 | 86,400 |
+| Net Issue to Public | 1,412,400 |  |
+| RII | 706,200 | 5,454,000 |
+| Other than RII | 706,200 | 2,185,800 |
+
+In the above table, we can see that as per RHP the split between RII and Others is 50-50% of Net Issue to public. The total number of shares applied by RII and Others is 7,639,800. However, the number of shares applied by RII is greater than Others. Thus, the number of shares available for allotment will also get proportionately adjusted based on these numbers.
+
+Shares available for allotment for RII = Shares applied by RII/Total number of shares applied *Net Issue to Public = 5,454,000/7,639,800 *1,412,400 = 1,008,303. This will be rounded to nearest lot size. Lot size in this case is 600 shares. Thus, the number of shares allotted to RII will be 1008,600 which tallies as per the BOA extract below.
+
+Shares available for allotment for Other than RII = Shares applied by Other than RII/Total number of shares applied *Net Issue to Public = 2,185,800/7,639,800 *1,412,400 = 404,098. This will be rounded to nearest lot size of 600. Thus, the number of shares allotted to Other than RII will be 403,800 which tallies as per the BOA extract below.
+
+![https://www.chittorgarh.com/images/screenshots/on-door-concepts-sme-ipo-basis-of-allotment.jpg](https://www.chittorgarh.com/images/screenshots/on-door-concepts-sme-ipo-basis-of-allotment.jpg)
+
+Note: The above logic gets applied only to SME Fixed Price Issues when RII subscription number is greater than Other than RII numbers.
+
+## **Page Glossary**
+
+### **1. Maximum RII Allottee**
+
+The maximum RII allottee is the number of maximum retail individual investors who will receive allotment in an IPO.
+
+As per the SEBI rule, each RII investor should receive minimum one lot. Thus, to achieve this, the number of shares offered/reserved for RIIs in an IPO is divided by the lot size to know the maximum number of RII to whom the shares will be allotted.
+
+### **2. Confirmation of Allocation Note (CAN)**
+
+The Allotment Confirmation is the letter, notice or communication of allotment of shares to the Anchor Investors who secured an allotment.
+
+### **3. Designated stock exchange**
+
+A stock exchange that the issuer selects for a particular issue or on which its securities are listed. The exchange being considered for listing is called the designated exchange. For example, ABC Ltd will list its new shares on the BSE. Here, the BSE is the designated exchange.
