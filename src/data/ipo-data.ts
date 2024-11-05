@@ -16,11 +16,21 @@ export interface Category {
 export interface Company {
   name: string;
   categories: Category[];
+  symbol?: string;
+  priceRange?: string;
+  listingPrice?: number;
+  currentPrice?: number;
+  status?: 'active' | 'closed';
 }
 
 export const companies: Company[] = [
   {
     name: "Western Carriers (India)",
+    symbol: "WESTCARR",
+    priceRange: "168-172",
+    listingPrice: 172,
+    currentPrice: 188,
+    status: "closed",
     categories: [
       {
         category: "Retail",
@@ -81,6 +91,11 @@ export const companies: Company[] = [
   },
   {
     name: "Northern Arc Capital",
+    symbol: "NORTHARC",
+    priceRange: "250-263",
+    listingPrice: 263,
+    currentPrice: 288,
+    status: "active",
     categories: [
       {
         category: "Retail",
