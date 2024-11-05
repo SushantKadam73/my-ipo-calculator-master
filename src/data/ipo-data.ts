@@ -21,6 +21,11 @@ export interface Company {
   listingPrice?: number;
   currentPrice?: number;
   status?: 'active' | 'closed';
+  openDate?: string;
+  closeDate?: string;
+  boaDate?: string;
+  listingDate?: string;
+  issueSize?: string;
 }
 
 export const companies: Company[] = [

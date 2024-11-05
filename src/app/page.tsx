@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { RefreshCcw } from 'lucide-react'
 import { format } from 'date-fns'
-
+import { companies, lastUpdated } from '@/data/ipo-data'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -22,73 +22,36 @@ import {
 } from '@/components/ui/table'
 import { Badge } from '@/components/ui/badge'
 
-interface IPO {
-  name: string
-  symbol?: string
-  price: string
-  priceRange?: string
-  gmp?: number
-  subscriptionRate?: number
-  issueSize: string
-  openDate?: string
-  closeDate?: string
-  boaDate?: string
-  listingDate: string
-  listingPrice?: string
-  currentPrice?: string
-  status?: 'active' | 'closed'
-}
-
 export default function Component() {
-  const [lastUpdated, setLastUpdated] = useState<Date>(new Date())
   const [isLoading, setIsLoading] = useState(false)
 
-  // Mock data - replace with actual API calls
-  const ongoingIPOs: IPO[] = [
-    {
-      name: 'Tech Innovators Inc.',
-      price: '450-500',
-      gmp: 50,
-      subscriptionRate: 3.5,
-      issueSize: '₹1,000 Cr',
-      closeDate: '2024-02-15',
-      boaDate: '2024-02-18',
-      listingDate: '2024-02-20',
-      status: 'active',
-    },
-  ]
+  // Filter companies based on status
+  const ongoingIPOs = companies.filter(c => c.status === 'active').map(c => ({
+    name: c.name,
+    price: c.priceRange,
+    gmp: c.categories[0].gmp,
+    subscriptionRate: c.categories[0].subscriptionRate,
+    issueSize: `₹${(c.categories[0].effectivePrice * c.categories[0].lotSize * 1000000).toLocaleString('en-IN')} Cr`,
+    closeDate: '2024-02-15', // You might want to add these dates to your data model
+    boaDate: '2024-02-18',
+    listingDate: '2024-02-20',
+    status: c.status
+  }))
 
-  const upcomingIPOs: IPO[] = [
-    {
-      name: 'Green Energy Solutions',
-      price: '300-350',
-      gmp: 30,
-      issueSize: '₹800 Cr',
-      openDate: '2024-02-20',
-      closeDate: '2024-02-22',
-      boaDate: '2024-02-25',
-      listingDate: '2024-02-28',
-    },
-  ]
-
-  const pastIPOs: IPO[] = [
-    {
-      name: 'Digital Payments Ltd',
-      price: '280',
-      symbol: 'DIGIPAY',
-      priceRange: '250-280',
-      issueSize: '₹600 Cr',
-      listingDate: '2024-01-15',
-      listingPrice: '₹310',
-      currentPrice: '₹325',
-    },
-  ]
+  const pastIPOs = companies.filter(c => c.status === 'closed').map(c => ({
+    name: c.name,
+    symbol: c.symbol,
+    priceRange: c.priceRange,
+    issueSize: `₹${(c.categories[0].effectivePrice * c.categories[0].lotSize * 1000000).toLocaleString('en-IN')} Cr`,
+    listingDate: '2024-01-15', // Add to data model
+    listingPrice: `₹${c.listingPrice}`,
+    currentPrice: `₹${c.currentPrice}`
+  }))
 
   const handleRefresh = async () => {
     setIsLoading(true)
     // Add actual data fetching logic here
     await new Promise(resolve => setTimeout(resolve, 1000))
-    setLastUpdated(new Date())
     setIsLoading(false)
   }
 
@@ -98,7 +61,7 @@ export default function Component() {
         <h1 className="text-3xl font-bold">IPO Dashboard</h1>
         <div className="flex items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            Last updated: {format(lastUpdated, 'MMM d, yyyy HH:mm:ss')}
+            Last updated: {lastUpdated}
           </p>
           <Button
             variant="outline"
@@ -112,6 +75,7 @@ export default function Component() {
         </div>
       </div>
 
+      {/* Ongoing IPOs */}
       <Card>
         <CardHeader>
           <CardTitle>Ongoing IPOs</CardTitle>
@@ -136,15 +100,13 @@ export default function Component() {
               {ongoingIPOs.map((ipo) => (
                 <TableRow key={ipo.name}>
                   <TableCell className="font-medium">{ipo.name}</TableCell>
-                  <TableCell>₹{ipo.price}</TableCell>
+                  <TableCell>{ipo.price}</TableCell>
                   <TableCell>{ipo.gmp ? `+${ipo.gmp}` : '-'}</TableCell>
-                  <TableCell>
-                    {ipo.subscriptionRate ? `${ipo.subscriptionRate}x` : '-'}
-                  </TableCell>
+                  <TableCell>{ipo.subscriptionRate ? `${ipo.subscriptionRate}x` : '-'}</TableCell>
                   <TableCell>{ipo.issueSize}</TableCell>
-                  <TableCell>{format(new Date(ipo.closeDate!), 'MMM d, yyyy')}</TableCell>
-                  <TableCell>{format(new Date(ipo.boaDate!), 'MMM d, yyyy')}</TableCell>
-                  <TableCell>{format(new Date(ipo.listingDate), 'MMM d, yyyy')}</TableCell>
+                  <TableCell>{ipo.closeDate}</TableCell>
+                  <TableCell>{ipo.boaDate}</TableCell>
+                  <TableCell>{ipo.listingDate}</TableCell>
                   <TableCell>
                     <Badge variant={ipo.status === 'active' ? 'default' : 'secondary'}>
                       {ipo.status}
@@ -157,43 +119,7 @@ export default function Component() {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Upcoming IPOs</CardTitle>
-          <CardDescription>IPOs opening for subscription soon</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Name</TableHead>
-                <TableHead>Price</TableHead>
-                <TableHead>GMP</TableHead>
-                <TableHead>Issue Size</TableHead>
-                <TableHead>Open Date</TableHead>
-                <TableHead>Close Date</TableHead>
-                <TableHead>BoA Date</TableHead>
-                <TableHead>Listing Date</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {upcomingIPOs.map((ipo) => (
-                <TableRow key={ipo.name}>
-                  <TableCell className="font-medium">{ipo.name}</TableCell>
-                  <TableCell>₹{ipo.price}</TableCell>
-                  <TableCell>{ipo.gmp ? `+${ipo.gmp}` : '-'}</TableCell>
-                  <TableCell>{ipo.issueSize}</TableCell>
-                  <TableCell>{format(new Date(ipo.openDate!), 'MMM d, yyyy')}</TableCell>
-                  <TableCell>{format(new Date(ipo.closeDate!), 'MMM d, yyyy')}</TableCell>
-                  <TableCell>{format(new Date(ipo.boaDate!), 'MMM d, yyyy')}</TableCell>
-                  <TableCell>{format(new Date(ipo.listingDate), 'MMM d, yyyy')}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </CardContent>
-      </Card>
-
+      {/* Past IPOs */}
       <Card>
         <CardHeader>
           <CardTitle>Past IPOs</CardTitle>
@@ -217,9 +143,9 @@ export default function Component() {
                 <TableRow key={ipo.name}>
                   <TableCell className="font-medium">{ipo.name}</TableCell>
                   <TableCell>{ipo.symbol}</TableCell>
-                  <TableCell>₹{ipo.priceRange}</TableCell>
+                  <TableCell>{ipo.priceRange}</TableCell>
                   <TableCell>{ipo.issueSize}</TableCell>
-                  <TableCell>{format(new Date(ipo.listingDate), 'MMM d, yyyy')}</TableCell>
+                  <TableCell>{ipo.listingDate}</TableCell>
                   <TableCell>{ipo.listingPrice}</TableCell>
                   <TableCell>{ipo.currentPrice}</TableCell>
                 </TableRow>

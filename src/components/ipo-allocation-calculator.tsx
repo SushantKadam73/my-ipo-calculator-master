@@ -54,19 +54,37 @@ interface Results {
 }
 
 const IPOAllocationCalculator = () => {
-  const [userInput, setUserInput] = useState<UserInput>({
-    totalCapital: '',
-    numAccounts: '',
-    selectedCompanies: Object.fromEntries(companies.map(c => [c.name, true])),
-    companyEligibility: Object.fromEntries(
-      companies.map(c => [c.name, {
-        numShareholderAccounts: '',
-        numEmployeeAccounts: ''
-      }])
-    )
-  });
-
+  const [userInput, setUserInput] = useState<UserInput>(getInitialUserInput());
   const [results, setResults] = useState<Results | null>(null);
+  const [selectedCategories, setSelectedCategories] = useState({
+    retail: true,
+    shni: true,
+    bhni: true,
+    shareholder: true,
+    employee: true
+  });
+  const [calculationPreference, setCalculationPreference] = useState('expectedGain');
+  const [reuseCapital, setReuseCapital] = useState(false);
+
+  function getInitialUserInput(): UserInput {
+    return {
+      totalCapital: '',
+      numAccounts: '',
+      selectedCompanies: Object.fromEntries(companies.map(c => [c.name, false])),
+      companyEligibility: Object.fromEntries(
+        companies.map(c => [c.name, {
+          numShareholderAccounts: '',
+          numEmployeeAccounts: ''
+        }])
+      )
+    };
+  }
+
+  const handleRefresh = () => {
+    setUserInput(getInitialUserInput());
+    setResults(null);
+  };
+
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -114,7 +132,7 @@ const IPOAllocationCalculator = () => {
     }).format(value);
   };
 
-  const calculateAllocation = () => {
+  const calculateAllocation = (preference?: string) => {
     const capital = parseFloat(userInput.totalCapital);
     const numAccounts = parseInt(userInput.numAccounts);
     
@@ -223,39 +241,13 @@ const IPOAllocationCalculator = () => {
       <CardHeader>
         <div className="flex justify-between items-center">
           <CardTitle>IPO Capital Allocation Calculator</CardTitle>
-          <div className="text-sm text-gray-500">
-            Last Updated: {lastUpdated}
-            <Button variant="outline" size="sm" className="ml-2" onClick={() => window.location.reload()}>
-              Refresh
-            </Button>
-          </div>
+          <Button variant="outline" size="sm" onClick={handleRefresh}>
+            Refresh
+          </Button>
         </div>
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
-          {/* Company Selection Checkboxes */}
-          <div className="space-y-2">
-            <h3 className="text-lg font-medium">Select Companies to Apply</h3>
-            <div className="flex flex-wrap gap-4">
-              {companies.map(company => (
-                <div key={company.name} className="flex items-center space-x-2">
-                  <Checkbox
-                    id={`company-${company.name}`}
-                    checked={userInput.selectedCompanies[company.name]}
-                    onCheckedChange={(checked) => setUserInput(prev => ({
-                      ...prev,
-                      selectedCompanies: {
-                        ...prev.selectedCompanies,
-                        [company.name]: checked as boolean
-                      }
-                    }))}
-                  />
-                  <label htmlFor={`company-${company.name}`}>{company.name}</label>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Capital and Accounts Input */}
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -280,11 +272,69 @@ const IPOAllocationCalculator = () => {
             </div>
           </div>
 
-          {/* Company-specific Account Inputs */}
+          {/* More Customization Options */}
+          <div className="space-y-4 border p-4 rounded-md">
+            <h3 className="text-lg font-medium">More Customization</h3>
+            
+            {/* Calculation Preference */}
+            <div>
+              <label className="block text-sm font-medium mb-2">Calculation Preference:</label>
+              <select 
+                className="w-full p-2 border rounded"
+                value={calculationPreference}
+                onChange={(e) => setCalculationPreference(e.target.value)}
+              >
+                <option value="gmp">Grey Market Premium (GMP)</option>
+                <option value="subscription">Subscription Rate</option>
+                <option value="capital">Capital Optimization</option>
+                <option value="roi">Return on Investment</option>
+                <option value="expectedGain">Expected Gain</option>
+              </select>
+            </div>
+
+            {/* Category Selection */}
+            <div>
+              <label className="block text-sm font-medium mb-2">Categories to Apply:</label>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="flex items-center space-x-2">
+                  <Checkbox 
+                    checked={selectedCategories.retail}
+                    onCheckedChange={(checked) => 
+                      setSelectedCategories(prev => ({...prev, retail: checked as boolean}))}
+                  />
+                  <label>Retail</label>
+                </div>
+                {/* Add similar checkboxes for other categories */}
+              </div>
+            </div>
+
+            {/* Capital Reuse Option */}
+            <div className="flex items-center space-x-2">
+              <Checkbox 
+                checked={reuseCapital}
+                onCheckedChange={(checked) => setReuseCapital(checked as boolean)}
+              />
+              <label>Allow capital reuse for upcoming IPOs</label>
+            </div>
+          </div>
+
+          {/* Company Sections */}
           {companies.map(company => (
-            userInput.selectedCompanies[company.name] && (
-              <div key={company.name} className="space-y-2">
+            <div key={company.name} className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Checkbox
+                  checked={userInput.selectedCompanies[company.name]}
+                  onCheckedChange={(checked) => setUserInput(prev => ({
+                    ...prev,
+                    selectedCompanies: {
+                      ...prev.selectedCompanies,
+                      [company.name]: checked as boolean
+                    }
+                  }))}
+                />
                 <h3 className="text-lg font-medium">{company.name} Accounts</h3>
+              </div>
+              {userInput.selectedCompanies[company.name] && (
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-1">Number of Shareholder Accounts</label>
@@ -323,13 +373,19 @@ const IPOAllocationCalculator = () => {
                     />
                   </div>
                 </div>
-              </div>
-            )
+              )}
+            </div>
           ))}
 
-          <Button onClick={calculateAllocation} className="w-full">
-            Calculate Optimal Allocation
-          </Button>
+          {/* Calculate Buttons */}
+          <div className="grid grid-cols-2 gap-4">
+            <Button onClick={() => calculateAllocation()} className="w-full">
+              Calculate Optimal Allocation
+            </Button>
+            <Button onClick={() => calculateAllocation()} className="w-full">
+              Calculate by {calculationPreference.charAt(0).toUpperCase() + calculationPreference.slice(1)}
+            </Button>
+          </div>
 
           {results && (
             <div className="space-y-4 mt-4">
