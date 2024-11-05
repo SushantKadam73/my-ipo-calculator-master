@@ -1,10 +1,17 @@
 'use client'
-import IPODashboard from '@/components/ipo-dashboard'
+import { IpoDashboard } from "@/components/ipo-dashboard";
 
 export default function HomePage() {
+  const lastUpdated = new Date(); // Or fetch this from your data source
+
+  const handleRefresh = () => {
+    // Add refresh logic here
+  };
+
   return (
-    <main className="container mx-auto px-4 py-8">
-      <IPODashboard />
+    <main>
+      <IpoDashboard lastUpdated={lastUpdated} onRefresh={handleRefresh} />
+      {/* Rest of your homepage content */}
     </main>
-  )
+  );
 }

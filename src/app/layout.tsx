@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Navigation } from '@/components/nav' // Changed from Nav to Navigation
+import { Navbar } from '../components/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'IPO Calculator & Optimizer',
-  description: 'Calculate and optimize your IPO investments',
+  title: 'IPO Calculator',
+  description: 'Calculate your IPO allotment chances',
 }
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation /> {/* Changed from Nav to Navigation */}
+        <Navbar />
         {children}
       </body>
     </html>

@@ -25,6 +25,22 @@ import { dashboardData, lastUpdated as initialLastUpdated } from '@/data/ipo-dat
 // Verify the data is imported correctly
 console.log('Imported dashboardData:', dashboardData);
 
+export function IpoDashboard({ lastUpdated, onRefresh }: { lastUpdated: Date | null, onRefresh: () => void }) {
+  return (
+    <div className="flex items-center gap-4">
+      <p className="text-sm text-muted-foreground">
+        Last updated: {lastUpdated ? format(lastUpdated, 'MMM d, yyyy HH:mm:ss') : 'Never'}
+      </p>
+      <Button
+        variant="outline"
+        onClick={onRefresh}
+      >
+        Refresh
+      </Button>
+    </div>
+  );
+}
+
 export default function IPODashboard() {
   const [lastUpdated, setLastUpdated] = useState<Date>(new Date(initialLastUpdated))
   const [isLoading, setIsLoading] = useState(false)
@@ -40,20 +56,7 @@ export default function IPODashboard() {
     <div className="container mx-auto p-4 space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold">IPO Dashboard</h1>
-        <div className="flex items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            Last updated: {format(lastUpdated, 'MMM d, yyyy HH:mm:ss')}
-          </p>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={handleRefresh}
-            disabled={isLoading}
-          >
-            <RefreshCcw className="h-4 w-4 mr-2" />
-            Refresh
-          </Button>
-        </div>
+        <IpoDashboard lastUpdated={lastUpdated} onRefresh={handleRefresh} />
       </div>
 
       <Card>
